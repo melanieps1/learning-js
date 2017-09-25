@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JavaScript</title>
+	<!-- Embedded style example below -->
+	<style>
+		p {
+			color: blue;
+		}
+	</style>
+	<!-- Linked external stylesheet example below (best way) -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<script>
+		// This can be put essentially anywhere in the body because it doesn't change the page rendering at all
+		function hello() {
+			alert('Hi there!');
+		}
+	</script>
+
+	<!-- Inline styling example -->
+	<h1 style="color: red;">JavaScript Playground</h1>
+	<p>
+		Bacon ipsum dolor amet chicken pancetta jowl meatball biltong. Ground round spare ribs tri-tip, kielbasa tail pig porchetta short ribs landjaeger pastrami kevin shank tenderloin. Chuck pork belly pork loin ball tip, strip steak tenderloin salami meatloaf brisket tri-tip short ribs pork chop hamburger. Cupim sirloin ground round short loin andouille. Drumstick ham hock short ribs pancetta beef shoulder ribeye alcatra. Flank meatball meatloaf salami drumstick.
+	</p>
+
+	<h2>List of Bacon</h2>
+	<ul>
+		<li>Bacon</li>
+		<li>Ribs</li>
+		<li>Brisket</li>
+		<li>Beef Jerky</li>
+		<li>Prosciutto</li>
+	</ul>
+
+	<button type="button" onclick="console.log('alert triggered in the console');alert('You clicked the button!');">Click me for an alert</button>
+	
+	<br>
+	<br>
+	
+	<button type="button" onclick="hello();">Click me to say hi</button>
+	
+	<br>
+	<br>
+	
+	<button type="button" onclick="warning();">This is a warning</button>
+
+	<p>
+		Cupim meatball pork rump jowl. Kielbasa jerky pork belly, porchetta tenderloin leberkas pork turducken hamburger short ribs chuck beef pastrami prosciutto. Pastrami pancetta frankfurter pork bresaola. Landjaeger cupim turkey drumstick. Cow pancetta pastrami beef salami bacon tenderloin prosciutto venison sirloin jowl corned beef shankle chicken.
+	</p>
+
+<!-- Links the JS file main.js -->
+<!-- This used to be used a lot at the bottom because scripts take a long time to load, but recently people are putting them in the <head> more and more -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
